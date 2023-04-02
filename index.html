@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <title>Cadastro - B7Web Fullstack</title>
+</head>
+
+<body>
+    <header>
+        <div class="text_header_top">
+            <h3>Cadastro para aulas gratuitas de html5, css3 e javascript somente até hoje 03/04!</h3>
+        </div>
+    </header>
+    <section>
+        <div class="b7web_img">
+            <img src="assets/img/LogoB7.png" />
+        </div>
+        <div class="b7web_title">
+            <h3>Área de Cadastro</h3>
+        </div>
+        <div class="b7web_formulario flexColumn">
+            <form action="/cadastro.php" method="GET">
+                <div class="title_form">Preencha com suas informaçoes pessoais</div>
+
+                <div class="preencher">
+                    <label for="name">Nome Completo:</label><br />
+                    <input type="text" id="name" name="name" autofocus required><br>
+                </div>
+
+                <div class="flex_line1">
+                    <div class="cpf_info">
+                        <label for="CPF">CPF:</label><br />
+                        <input type="number" id="CPF" name="CPF" required>
+                    </div>
+                    <div class="nascimento_info">
+                        <label for="nascimento">Nascimento:</label><br />
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </div>
+                    <div class="genero_info">
+                        <label for="genero">Sexo:</label><br />
+                        <select name="genero" id="genero" required>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="email_line">
+                    <label for="email">E-mail:</label><br />
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+
+                <div class="flex_line2">
+                    <div class="password_insert">
+                        <label for="password">Senha:</label><br />
+                        <input type="password" id="password" name="password" required><br />
+                    </div>
+                    <div class="password_confirm">
+                        <label for="confirm_password">Repita a senha:</label><br />
+                        <input type="password" id="confirm_password" name="confirm_password" required><br />
+                    </div>
+                </div>
+                <div class="flex_line3">
+                    <button>ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            Desenvolvido por <b><a href="https://www.instagram.com/luiisbiel" target="_blank">Luis Gabriel</a></b> - <a href="https://www.b7web.com.br">www.b7web.com.br</a>
+        </div>
+    </footer>
+</body>
+
+</html>
